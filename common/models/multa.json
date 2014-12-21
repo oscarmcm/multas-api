@@ -1,0 +1,22 @@
+{
+  "name": "multa",
+  "plural": "multas",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "properties": {
+    "descripcion": {
+      "type": "string"
+    },
+    "tipo": {
+      "type": "string"
+    },
+    "valor": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}

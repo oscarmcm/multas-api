@@ -1,6 +1,6 @@
 var GLOBAL_CONFIG = require('../global-config');
 module.exports = {
   restApiRoot: GLOBAL_CONFIG.restApiRoot,
-  host: '0.0.0.0',
-  port: 3000
+  host: process.env.HOST || '0.0.0.0',
+  port: process.env.PORT || 5000
 };

@@ -1,1 +1,1 @@
-web: NODE_ENV=Production node server/server.js
+web: node server/server.js

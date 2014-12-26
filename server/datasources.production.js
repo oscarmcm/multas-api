@@ -4,6 +4,8 @@ module.exports = {
     port: process.env.MULTAS_PG_PORT,
     database: process.env.MULTAS_PG_DATABASE,
     user: process.env.MULTAS_PG_USER,
+    password: process.env.MULTAS_PG_PASS,
+    ssl: true,
     name: 'db',
     connector: 'postgresql'
   },
@@ -12,6 +14,8 @@ module.exports = {
     port: process.env.MULTAS_PG_PORT,
     database: process.env.MULTAS_PG_DATABASE,
     user: process.env.MULTAS_PG_USER,
+    password: process.env.MULTAS_PG_PASS,
+    ssl: true,
     name: 'multas',
     connector: 'postgresql'
   }

@@ -1,0 +1,725 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="fr-FR">
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+
+<title>Résultats de recherche - Noisacco.fr | Petites annonces de voitures haut de gamme - 100% gratuit</title>
+<meta name="title" content="Résultats de recherche - Noisacco.fr | Petites annonces de voitures haut de gamme - 100% gratuit" />
+<meta name="description" content="Break , ks sfhds fhds fhjds kfh dskfgsdlfgds f, Break " />
+<meta name="keywords" content="Break, Languedoc-Roussillon, Break Languedoc-Roussillon" />
+<meta http-equiv="Cache-Control" content="no-cache" />
+<meta http-equiv="Expires" content="Fri, Jan 01 1970 00:00:00 GMT" />
+
+<link href="../../../../www.noisacco.fr/oc-content/themes/france/style.css" rel="stylesheet" type="text/css" />
+<link href="../../../../www.noisacco.fr/oc-content/themes/france/tabs.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript">
+    var fileDefaultText = 'Aucun fichier sélectionné';
+    var fileBtnText     = 'Sélectionner un fichier';
+</script>
+<script type="text/javascript" src="../../../../www.noisacco.fr/oc-content/themes/france/js/jquery.js"></script>
+<script type="text/javascript" src="../../../../www.noisacco.fr/oc-content/themes/france/js/jquery-ui.js"></script>
+<script type="text/javascript" src="../../../../www.noisacco.fr/oc-content/themes/france/js/jquery.uniform.js"></script>
+<script type="text/javascript" src="../../../../www.noisacco.fr/oc-content/themes/france/js/tabber-minimized.js"></script>
+<script type="text/javascript" src="../../../../www.noisacco.fr/oc-content/themes/france/js/global.js"></script>
+
+    <script type="text/javascript" src="../../../../www.noisacco.fr/oc-content/plugins/location_required/jquery.metadata.js"></script>
+    <!-- Watchlist js --><script type="text/javascript">var watchlist_url = "../../../../www.noisacco.fr/index.php@page=ajax&action=custom&ajaxfile=watchlist_2Fajax_watchlist.php" ;</script><script type="text/javascript" src="../../../../www.noisacco.fr/oc-content/plugins/watchlist/js/watchlist.js"></script><!-- Watchlist js end --><meta name="generator" content="OSClass 3.0.2" />                    <meta name="robots" content="index, follow" />
+            <meta name="googlebot" content="index, follow" />
+                    <style>
+                ul.sub {
+                    padding-left: 20px;
+                }
+                .chbx{
+                    width:15px; height:15px;
+                    display: inline;
+                    padding:8px 3px;
+                    background-repeat:no-repeat;
+                    cursor: pointer;
+                }
+                .chbx span{
+                    width:13px; height:13px;
+                    display: inline-block;
+                    border:solid 1px #bababa;
+
+                    border-radius:2px;
+                    -moz-border-radius:2px;
+                    -webkit-border-radius:2px;
+                }
+                .chbx.checked{
+                    background-image:url('../../../../www.noisacco.fr/oc-content/themes/france/images/checkmark.png');
+                }
+                .chbx.semi-checked{
+                    background-image:url('../../../../www.noisacco.fr/oc-content/themes/france/images/checkmark-partial.png');
+                }
+
+            </style>
+            <script type="text/javascript">
+                $(document).ready(function(){
+                    $('li.parent').each(function() {
+                        var totalInputSub = $(this).find('ul.sub>li>input').size();
+                        var totalInputSubChecked = $(this).find('ul.sub>li>input:checked').size();
+
+                        $(this).find('ul.sub>li>input').each(function(){
+                            $(this).hide();
+                            var id = $(this).attr('id');
+                            id = id+'_';
+                            if( $(this).is(':checked') ){
+                                var aux = $('<div class="chbx checked"><span></span></div>').attr('id', id);
+                                $(this).before(aux);
+                            } else {
+                                var aux = $('<div class="chbx"><span></span></div>').attr('id', id);
+                                $(this).before(aux);
+                            }
+                        });
+
+                        var input = $(this).find('input.parent');
+                        $(input).hide();
+                        var id = $(input).attr('id');
+                        id = id+'_';
+                        if(totalInputSub == totalInputSubChecked) {
+                            if(totalInputSub == 0) {
+                                if( $(this).find("input[name='sCategory[]']:checked").size() > 0) {    
+                                    var aux = $('<div class="chbx checked"><span></span></div>').attr('id', id);   
+                                    $(input).before(aux);
+                                } else {
+                                    var aux = $('<div class="chbx"><span></span></div>').attr('id', id);   
+                                    $(input).before(aux);
+                                }
+                            } else {
+                                var aux = $('<div class="chbx checked"><span></span></div>').attr('id', id);
+                                $(input).before(aux);
+                            }
+                        }else if(totalInputSubChecked == 0) {
+                            // no input checked
+                            var aux = $('<div class="chbx"><span></span></div>').attr('id', id);
+                            $(input).before(aux);
+                        }else if(totalInputSubChecked < totalInputSub) {
+                            var aux = $('<div class="chbx semi-checked"><span></span></div>').attr('id', id);
+                            $(input).before();
+                        }
+                    });
+                    
+                    $('li.parent').prepend('<span style="width:6px;display:inline-block;" class="toggle">+</span>');
+                    $('ul.sub').toggle();
+                    
+                    $('span.toggle').click(function(){ 
+                        $(this).parent().find('ul.sub').toggle();
+                        if($(this).text()=='+'){
+                            $(this).html('-');
+                        } else {
+                            $(this).html('+');
+                        }
+                    });
+                    
+                    $("li input[name='sCategory[]']").change( function(){
+                        var id = $(this).attr('id');
+                        $(this).click();
+                        $('#'+id+'_').click();
+                    });
+                    
+                    $('div.chbx').click( function() {
+                        
+                        var isChecked       = $(this).hasClass('checked');
+                        var isSemiChecked   = $(this).hasClass('semi-checked');
+                        
+                        if(isChecked) {
+                            $(this).removeClass('checked');
+                            $(this).next('input').attr('checked', false);
+                        } else if(isSemiChecked) {
+                            $(this).removeClass('semi-checked');
+                            $(this).next('input').attr('checked', false);
+                        } else {
+                            $(this).addClass('checked');
+                            $(this).next('input').attr('checked', true);
+                        }
+                        
+                        // there are subcategories ?
+                        if($(this).parent().find('ul.sub').size()>0) {
+                            if(isChecked){
+                                $(this).parent().find('ul.sub>li>div.chbx').removeClass('checked');
+                                $(this).parent().find('ul.sub>li>input').attr('checked', false);
+                            } else if(isSemiChecked){
+                                // if semi-checked -> check-all
+                                $(this).parent().find('ul.sub>li>div.chbx').removeClass('checked');
+                                $(this).parent().find('ul.sub>li>input').attr('checked', false);
+                                $(this).removeClass('semi-checked');
+                            } else {
+                                $(this).parent().find('ul.sub>li>div.chbx').addClass('checked');
+                                $(this).parent().find('ul.sub>li>input').attr('checked', true);
+                            }
+                        } else {
+                            // is subcategory checkbox or is category parent without subcategories
+                            var parentLi = $(this).closest('li.parent');
+                            
+                            // subcategory
+                            if($(parentLi).find('ul.sub').size() > 0) {
+                                var totalInputSub           = $(parentLi).find('ul.sub>li>input').size();
+                                var totalInputSubChecked    = $(parentLi).find('ul.sub>li>input:checked').size();
+
+                                var input    = $(parentLi).find('input.parent');
+                                var divInput = $(parentLi).find('div.chbx').first();
+
+                                $(input).attr('checked', false);
+                                $(divInput).removeClass('checked');
+                                $(divInput).removeClass('semi-checked');
+
+                                if(totalInputSub == totalInputSubChecked) {    
+                                    $(divInput).addClass('checked');
+                                    $(input).attr('checked', true);
+                                }else if(totalInputSubChecked == 0) {
+                                    // no input checked;
+                                }else if(totalInputSubChecked < totalInputSub) {
+                                    $(divInput).addClass('semi-checked');
+                                }   
+                            } else {
+                                // parent category 
+                            }
+                        }
+                    });
+                });
+            </script>
+            <!-- //////////////////////// RAJOUT JUL POUR LES FILTRES PERMANENTS ///////////////////////// --> 
+                        <!-- //////////////////////// RAJOUT JUL POUR LES FILTRES PERMANENTS ///////////////////////// --> 
+            <!-- //////////////////////// RAJOUT JUL POUR LES FILTRES PERMANENTS ///////////////////////// --> 
+
+            <script type="text/javascript">
+    $(document).ready(function(){
+        $("#make").change(function(){
+            var make_id = $(this).val();
+            var url = '../../../../www.noisacco.fr/index.php@page=ajax&action=custom&ajaxfile=cars_attributes_2Fajax.php&makeId=' + make_id;
+            var result = '';
+            if(make_id != '') {
+                $("#model").attr('disabled',false);
+                $.ajax({
+                    type: "POST",
+                    url: url,
+                    dataType: 'json',
+                    success: function(data){
+                        var length = data.length;
+                        if(length > 0) {
+                            result += '<option value="">Select a model</option>';
+                            for(key in data) {
+                                result += '<option value="' + data[key].pk_i_id + '">' + data[key].s_name + '</option>';
+                            }
+                        } else {
+                            result += '<option value="">No results</option>';
+                        }
+                        $("#model").html(result);
+                    }
+                 });
+             } else {
+                $("#model").attr('disabled',true);
+             }
+        });
+    });
+</script>
+
+            <!-- //////////////////////// RAJOUT JUL POUR LES FILTRES PERMANENTS ///////////////////////// --> 
+	            <!-- //////////////////////// RAJOUT JUL POUR LES FILTRES PERMANENTS ///////////////////////// --> 
+            <!-- //////////////////////// RAJOUT JUL POUR LES FILTRES PERMANENTS ///////////////////////// --> 
+
+    </head>
+    <body>
+        <div id="flash_js"></div><!-- container -->
+<div class="container">
+<!-- header -->
+<div id="header">
+    <a id="logo" href="../../../../www.noisacco.fr/default.htm"><img border="0" alt="Noisacco.fr | Petites annonces de voitures haut de gamme - 100% gratuit" src="../../../../www.noisacco.fr/oc-content/themes/france/images/logo.jpg" /></a>
+    <div id="user_menu">
+        <ul>
+                                                <li class="first">
+                        <a id="login_open" href="../../../../www.noisacco.fr/user/login">Connexion</a>
+                                                    &middot;
+                            <a href="../../../../www.noisacco.fr/user/register">Inscription</a>
+                                                <form id="login" action="http://www.noisacco.fr/index.php" method="post">
+                            <fieldset>
+                                <input type="hidden" name="page" value="login" />
+                                <input type="hidden" name="action" value="login_post" />
+                                <label for="email">E-mail</label><br/>
+                                <input id="email" type="text" name="email" value="" /><br/>
+                                <label for="password">Mot de passe</label><br/>
+                                <input id="password" type="password" name="password" value="" />                                <p class="checkbox"><input id="remember" type="checkbox" name="remember" value="1" /> <label for="rememberMe">Enregistrer mon mot de passe</label></p>
+                                <button type="submit">Connectez vous</button>
+                                <div class="forgot">
+                                    <a href="../../../../www.noisacco.fr/user/recover">Mot de passe oublié?</a>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </li>
+                                                </ul>
+                    <div id="form_publish">
+                <strong class="publish_button"><a href="../../../../www.noisacco.fr/item/new">Publiez votre annonce gratuitement</a></strong>
+            </div>
+                <div class="empty"></div>
+    </div>
+    <div id="pubmilieu"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-3836100277106355";
+/* milieu-noisa */
+google_ad_slot = "9342304546";
+google_ad_width = 970;
+google_ad_height = 90;
+//-->
+</script>
+<acript type="text/javascript"
+src="../../../../pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+</div>
+
+<div class="clear"></div>
+
+<!-- /header -->
+    <div class="breadcrumb">
+        <ul class="breadcrumb">
+<li class="first-child" itemscope itemtype="http://data-vocabulary.org/Breadcrumb" ><a href="../../../../www.noisacco.fr/default.htm" itemprop="url"><span itemprop="title">Noisacco.fr | Petites annonces de voitures haut de gamme - 100% gratuit</span></a></li>
+
+<li class="last-child" itemscope itemtype="http://data-vocabulary.org/Breadcrumb" > &raquo; <span itemprop="title">Résultats de recherche</span></li>
+</ul>
+        
+        <div class="clear"></div>
+        
+    </div>
+    
+        <div class="content list">
+            <div id="main">
+                <div class="ad_list">
+                    <div id="list_head">
+                        <div class="inner">
+                            <h1>
+                                <strong>Résultat de la recherche</strong>
+                            </h1>
+                            <p class="see_by">
+                                Trier par:
+                                                                                                                                            <a class="current" href="../../../../www.noisacco.fr/search/category,future-tf/assets/img/loader.gif/sOrder,dt_pub_date/iOrderType,desc/default.htm">Récemment ajouté</a>
+                                                                                                                <span>|</span>
+                                                                                                                                                                                    <a href="../../../../www.noisacco.fr/search/category,future-tf/assets/img/loader.gif/sOrder,i_price/iOrderType,asc/default.htm">Tri par prix ascendant</a>
+                                                                                                                <span>|</span>
+                                                                                                                                                                                    <a href="../../../../www.noisacco.fr/search/category,future-tf/assets/img/loader.gif/sOrder,i_price/iOrderType,desc/default.htm">Tri par prix descendant</a>
+                                                                                                                                                                        </p>
+                        </div>
+                    </div>
+                                            <table border="0" cellspacing="0">
+    <tbody>
+                            <tr class="even">
+                                 <td class="photo">
+                                             <a href="../../../../www.noisacco.fr/break/jhjhd-hdehjd-e_i16"><img src="../../../../www.noisacco.fr/oc-content/uploads/24_thumbnail.jpg" width="75" height="56" title="JHJHD HDEHJD E" alt="JHJHD HDEHJD E" /></a>
+                                     </td>
+                                  <td class="text">
+                     <h3>
+                         <a href="../../../../www.noisacco.fr/break/jhjhd-hdehjd-e_i16">JHJHD HDEHJD E</a>
+                     </h3>
+                     <p>
+                         <strong>9 Euro € -  (Languedoc-Roussillon) - 30/04/2014</strong>
+                     </p>
+                     <p>ks sfhds fhds fhjds kfh dskfgsdlfgds f</p>
+                 </td>
+             </tr>
+                                <tr class="odd">
+                                 <td class="photo">
+                                             <a href="../../../../www.noisacco.fr/break/kjfjkjkldfsljk_i15"><img src="../../../../www.noisacco.fr/oc-content/uploads/23_thumbnail.jpg" width="75" height="56" title="kjfjkjkldfsljk" alt="kjfjkjkldfsljk" /></a>
+                                     </td>
+                                  <td class="text">
+                     <h3>
+                         <a href="../../../../www.noisacco.fr/break/kjfjkjkldfsljk_i15">kjfjkjkldfsljk</a>
+                     </h3>
+                     <p>
+                         <strong>98 Euro € -  (Aquitaine) - 30/04/2014</strong>
+                     </p>
+                     <p>kjdsf ldsfhjkl dsfh qdsf</p>
+                 </td>
+             </tr>
+                                <tr class="even">
+                                 <td class="photo">
+                                             <a href="../../../../www.noisacco.fr/compacte/audi-tt-rs-2011_i14"><img src="../../../../www.noisacco.fr/oc-content/uploads/22_thumbnail.jpg" width="75" height="56" title="Audi tt rs 2011" alt="Audi tt rs 2011" /></a>
+                                     </td>
+                                  <td class="text">
+                     <h3>
+                         <a href="../../../../www.noisacco.fr/compacte/audi-tt-rs-2011_i14">Audi tt rs 2011</a>
+                     </h3>
+                     <p>
+                         <strong>3 Euro € -  (Auvergne) - 30/04/2014</strong>
+                     </p>
+                     <p>dfhjkdfsjsdfhjf  dfqfssdf</p>
+                 </td>
+             </tr>
+                                <tr class="odd">
+                                 <td class="photo">
+                                             <a href="../../../../www.noisacco.fr/cabriolet/bugatti-veyron-bleu-merveilleux_i13"><img src="../../../../www.noisacco.fr/oc-content/uploads/21_thumbnail.jpg" width="75" height="56" title="Bugatti veyron - Bleu merveilleux" alt="Bugatti veyron - Bleu merveilleux" /></a>
+                                     </td>
+                                  <td class="text">
+                     <h3>
+                         <a href="../../../../www.noisacco.fr/cabriolet/bugatti-veyron-bleu-merveilleux_i13">Bugatti veyron - Bleu merveilleux</a>
+                     </h3>
+                     <p>
+                         <strong>99 Euro € -  (Rhône-Alpes) - 30/04/2014</strong>
+                     </p>
+                     <p>sdjhfhdsf dfsqhj</p>
+                 </td>
+             </tr>
+                                <tr class="even">
+                                 <td class="photo">
+                                             <a href="../../../../www.noisacco.fr/break/jhhjhjjhjhkhjkhjkhjjhhjk_i12"><img src="../../../../www.noisacco.fr/oc-content/uploads/20_thumbnail.jpg" width="75" height="56" title="jhhjhjjhjhkhjkhjkhjjhhjk" alt="jhhjhjjhjhkhjkhjkhjjhhjk" /></a>
+                                     </td>
+                                  <td class="text">
+                     <h3>
+                         <a href="../../../../www.noisacco.fr/break/jhhjhjjhjhkhjkhjkhjjhhjk_i12">jhhjhjjhjhkhjkhjkhjjhhjk</a>
+                     </h3>
+                     <p>
+                         <strong>2 333 Euro € -  (Bretagne) - 30/04/2014</strong>
+                     </p>
+                     <p>jh dhf zhdfhez fh zhf ede</p>
+                 </td>
+             </tr>
+                                <tr class="odd">
+                                 <td class="photo">
+                                             <a href="../../../../www.noisacco.fr/compacte/h-hj-h_i11"><img src="../../../../www.noisacco.fr/oc-content/uploads/19_thumbnail.jpg" width="75" height="56" title="h hj h" alt="h hj h" /></a>
+                                     </td>
+                                  <td class="text">
+                     <h3>
+                         <a href="../../../../www.noisacco.fr/compacte/h-hj-h_i11">h hj h</a>
+                     </h3>
+                     <p>
+                         <strong>2 Euro € -  (Franche-Comté) - 30/04/2014</strong>
+                     </p>
+                     <p>bjjhjhhjkhjkhjhjhjk hjh h h j</p>
+                 </td>
+             </tr>
+                                <tr class="even">
+                                 <td class="photo">
+                                             <a href="../../../../www.noisacco.fr/4x4-suv/audi-tt-rs-2011cxcxc_i10"><img src="../../../../www.noisacco.fr/oc-content/uploads/18_thumbnail.jpg" width="75" height="56" title="Audi tt rs 2011cxcxc" alt="Audi tt rs 2011cxcxc" /></a>
+                                     </td>
+                                  <td class="text">
+                     <h3>
+                         <a href="../../../../www.noisacco.fr/4x4-suv/audi-tt-rs-2011cxcxc_i10">Audi tt rs 2011cxcxc</a>
+                     </h3>
+                     <p>
+                         <strong>23 Euro € - SDS (Bourgogne) - 30/04/2014</strong>
+                     </p>
+                     <p>lkdsf dfsk dsk dsfk dsfj qfjdjqsfsdq fqsdfsd</p>
+                 </td>
+             </tr>
+                                <tr class="odd">
+                                 <td class="photo">
+                                             <a href="../../../../www.noisacco.fr/cabriolet/lzkkez-ezlezkezkez_i9"><img src="../../../../www.noisacco.fr/oc-content/uploads/17_thumbnail.jpg" width="75" height="56" title="lzkkez ezlezkezkez" alt="lzkkez ezlezkezkez" /></a>
+                                     </td>
+                                  <td class="text">
+                     <h3>
+                         <a href="../../../../www.noisacco.fr/cabriolet/lzkkez-ezlezkezkez_i9">lzkkez ezlezkezkez</a>
+                     </h3>
+                     <p>
+                         <strong>1 Euro € -  (Midi-Pyrénées) - 30/04/2014</strong>
+                     </p>
+                     <p>dhf jhdf jdz fhhej refzfrfzefrezfref</p>
+                 </td>
+             </tr>
+                                <tr class="even">
+                                 <td class="photo">
+                                             <a href="../../../../www.noisacco.fr/coupe/bugatti-veyron-bleu-merveilleux_i8"><img src="../../../../www.noisacco.fr/oc-content/uploads/16_thumbnail.jpg" width="75" height="56" title="Bugatti veyron - Bleu merveilleux" alt="Bugatti veyron - Bleu merveilleux" /></a>
+                                     </td>
+                                  <td class="text">
+                     <h3>
+                         <a href="../../../../www.noisacco.fr/coupe/bugatti-veyron-bleu-merveilleux_i8">Bugatti veyron - Bleu merveilleux</a>
+                     </h3>
+                     <p>
+                         <strong>1 Euro € -  (Aquitaine) - 30/04/2014</strong>
+                     </p>
+                     <p>dfhd fshd dhs dfhs fdsh sdhfdh dshjfdfhqds h dsqfqdsf sf</p>
+                 </td>
+             </tr>
+                                <tr class="odd">
+                                 <td class="photo">
+                                             <a href="../../../../www.noisacco.fr/berline/bugatti-veyron-bleu-merveilleux_i7"><img src="../../../../www.noisacco.fr/oc-content/uploads/15_thumbnail.jpg" width="75" height="56" title="Bugatti veyron - Bleu merveilleux" alt="Bugatti veyron - Bleu merveilleux" /></a>
+                                     </td>
+                                  <td class="text">
+                     <h3>
+                         <a href="../../../../www.noisacco.fr/berline/bugatti-veyron-bleu-merveilleux_i7">Bugatti veyron - Bleu merveilleux</a>
+                     </h3>
+                     <p>
+                         <strong>23 Euro € -  (Auvergne) - 29/04/2014</strong>
+                     </p>
+                     <p>Cette édition de la Veyron, produite à trente exemplaires seulement (tous vendus), est la première à proposer des modifications autres qu'esthétiques. Ainsi, outre des modifications apportées à la carrosserie afin d'améliorer l'aérodynamique et le rapport poids/puissance, la Super Sport propose une ...</p>
+                 </td>
+             </tr>
+                        </tbody>
+</table>                                        <div class="paginate" >
+                    <ul><li><span class="searchPaginationSelected list-first">1</span></li> <li><a rel="nofollow" href="../../../../www.noisacco.fr/future-tf/assets/img/loader.gif/2" class="searchPaginationNonSelected">2</a></li> <li><a rel="nofollow" href="../../../../www.noisacco.fr/future-tf/assets/img/loader.gif/2" class="searchPaginationNext list-last">&gt;</a></li></ul>                    </div>
+                </div>
+            </div>
+            <div id="sidebar">
+                <div class="filters">
+                    <form action="http://www.noisacco.fr/index.php" method="get" onsubmit="return doSearch()">
+                        <input type="hidden" name="page" value="search" />
+                        <input type="hidden" name="sOrder" value="dt_pub_date" />
+                        <input type="hidden" name="iOrderType" value="desc" />
+                                                <fieldset class="box location">
+                            <h3><strong>Votre recherche</strong></h3>
+                            <div class="row one_input">
+                                <input type="text" name="sPattern" id="query" value="" />
+                                <div id="search-example"></div>
+                            </div>
+                            <h3><strong>Lieu</strong></h3>
+                            <div class="row one_input">
+                                <h6>Région</h6>
+								<select name="sRegion" id="sRegion"value="<select name="regionId" id="regionId"><option value="">Sélectionner une région</option><option value="740112">Île-de-France</option><option value="740125">Rhône-Alpes</option><option value="740134">Provence-Alpes-Côte d'Azur</option><option value="740141">Nord-Pas-de-Calais</option><option value="740157">Pays de la Loire</option><option value="740173">Bretagne</option><option value="740189">Aquitaine</option><option value="740205">Midi-Pyrénées</option><option value="740221">Centre</option><option value="740237">Lorraine</option><option value="740253">Languedoc-Roussillon</option><option value="740269">Picardie</option><option value="740285">Haute-normandie</option><option value="740301">Alsace</option><option value="740317">Poitou-Charentes</option><option value="740333">Bourgogne</option><option value="740349">Basse-Normandie</option><option value="740365">Champagne-Ardennes</option><option value="740381">Auvergne</option><option value="740397">Franche-Comté</option><option value="740418">Limousin</option><option value="740435">Corse</option><option value="740447">Zúrich</option><option value="740448">Berna</option><option value="740449">Lucerna</option><option value="740450">Uri</option><option value="740451">Schwyz</option><option value="740452">Obwalden</option><option value="740453">Nidwalden</option><option value="740454">Glaris</option><option value="740455">Zug</option><option value="740456">Friburgo</option><option value="740457">Soleura</option><option value="740458">Basilea-ciudad</option><option value="740459">Basilea-campiña</option><option value="740460">Schaffhausen</option><option value="740461">Appenzell Rodas Exteriores</option><option value="740462">Appenzell Rodas Interiores</option><option value="740463">San Galo</option><option value="740464">Grisones</option><option value="740465">Argovia</option><option value="740466">Turgovia</option><option value="740467">Tesino</option><option value="740468">Vaud</option><option value="740469">Valais</option><option value="740470">Neuchatel</option><option value="740471">Ginebra</option><option value="740472">Jura</option></select></select>
+                                </div>
+                                </fieldset>
+                                <fieldset class="box show_only">
+                                
+                                <fieldset>
+    <h3>Filtres de recherche</h3>
+    <div class="row one_input">
+        <h6>Marque</h6>
+        <select name="make" id="make" >
+            <option value="">Sélectionner une marque</option>
+                            <option value="3" >Alfa Romeo</option>
+                            <option value="4" >Aston Martin</option>
+                            <option value="2" >Audi</option>
+                            <option value="5" >BMW</option>
+                            <option value="54" >Bugatti</option>
+                            <option value="6" >Buick</option>
+                            <option value="7" >Cadillac</option>
+                            <option value="8" >Chevrolet</option>
+                            <option value="9" >Chrysler</option>
+                            <option value="10" >Datsun</option>
+                            <option value="11" >Dodge</option>
+                            <option value="12" >FAW</option>
+                            <option value="14" >Ferrari</option>
+                            <option value="15" >Fiat</option>
+                            <option value="16" >Ford</option>
+                            <option value="17" >GEO</option>
+                            <option value="18" >GMC</option>
+                            <option value="19" >Honda</option>
+                            <option value="20" >Hummer</option>
+                            <option value="21" >Hyundai</option>
+                            <option value="22" >Infiniti</option>
+                            <option value="23" >Izusu</option>
+                            <option value="24" >Jaguar</option>
+                            <option value="25" >Jeep</option>
+                            <option value="26" >Lamborghini</option>
+                            <option value="27" >Land Rover</option>
+                            <option value="28" >Lincoln</option>
+                            <option value="29" >Maserati</option>
+                            <option value="30" >Mazda</option>
+                            <option value="31" >Mercedes Benz</option>
+                            <option value="32" >Mercury</option>
+                            <option value="34" >MG</option>
+                            <option value="35" >Mini</option>
+                            <option value="36" >Mitsubishi</option>
+                            <option value="37" >Nissan</option>
+                            <option value="38" >Oldsmobile</option>
+                            <option value="39" >Peugeot</option>
+                            <option value="40" >Plymouth</option>
+                            <option value="41" >Pontiac</option>
+                            <option value="42" >Porsche</option>
+                            <option value="43" >Rambler</option>
+                            <option value="44" >Renault</option>
+                            <option value="45" >RollsRoyce</option>
+                            <option value="46" >Rove</option>
+                            <option value="47" >Saab</option>
+                            <option value="48" >Seat</option>
+                            <option value="49" >Smart</option>
+                            <option value="50" >Suzuki</option>
+                            <option value="51" >Toyota</option>
+                            <option value="33" >Villager</option>
+                            <option value="52" >Volkswagen</option>
+                            <option value="53" >Volvo</option>
+                    </select>
+    </div>
+    <div class="row one_input">
+        <h6>Modèle</h6>
+        <select name="model" id="model">
+            <option value="">Sélectionner un modèle</option>
+                    </select>
+    </div>
+    <div class="row one_input">
+        <h6>Type</h6>
+        <select name="type" id="type">
+            <option value="">Sélectionner un type</option>
+                            <option value="1" >Berline</option>
+                            <option value="2" >Break</option>
+                            <option value="3" >Cabriolet</option>
+                            <option value="4" >Compacte</option>
+                            <option value="5" >Coupé</option>
+                            <option value="6" >4x4 - SUV</option>
+                    </select>
+    </div>
+    <div class="row one_input">
+                <h6 for="transmission">Transmission</h6>
+        <input style="width:20px;" type="radio" name="transmission" value="MANUAL" id="manual" /> <label for="manual">Manuelle</label><br />
+        <input style="width:20px;" type="radio" name="transmission" value="AUTO" id="auto" /> <label for="auto">Automatique</label>
+    </div>
+    
+    <div class="row one_input">
+                <h6 for="seller">Vendeur</h6>
+        <input style="width:20px;" type="radio" name="seller" value="DEALER" id="dealer" /> <label for="dealer">Professionnel</label><br />
+        <input style="width:20px;" type="radio" name="seller" value="OWNER" id="owner" /> <label for="owner">Particulier</label>
+    </div>
+</fieldset>
+                                                        <h3><strong>Afficher uniquement</strong></h3>
+                            <div class="row checkboxes">
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" name="bPic" id="withPicture" value="1"  />
+                                        <label for="withPicture">Afficher uniquement les annonces contenant des images</label>
+                                    </li>
+                                </ul>
+                            </div>
+                                                                                    <div class="row two_input">
+                                <h6>Prix</h6>
+                                <div>Minimum.</div>
+                                <input type="text" id="priceMin" name="sPriceMin" value="" size="6" maxlength="6" />
+                                <div>Maximum.</div>
+                                <input type="text" id="priceMax" name="sPriceMax" value="" size="6" maxlength="6" />
+                            </div>
+                            <!--                                                                                        <div class="row checkboxes">
+                                    <h6>Type</h6>
+                                    <ul>
+                                                                                                                                                                    <li class="parent">
+                                                <input class="parent" type="checkbox" id="cat103" name="sCategory[]" value="103"  /> <label for="cat103"><strong>Berline</strong></label>
+                                                                                            </li>
+                                                                                    <li class="parent">
+                                                <input class="parent" type="checkbox" id="cat105" name="sCategory[]" value="105"  /> <label for="cat105"><strong>Break</strong></label>
+                                                                                            </li>
+                                                                                    <li class="parent">
+                                                <input class="parent" type="checkbox" id="cat108" name="sCategory[]" value="108"  /> <label for="cat108"><strong>Cabriolet</strong></label>
+                                                                                            </li>
+                                                                                    <li class="parent">
+                                                <input class="parent" type="checkbox" id="cat107" name="sCategory[]" value="107"  /> <label for="cat107"><strong>Compacte</strong></label>
+                                                                                            </li>
+                                                                                    <li class="parent">
+                                                <input class="parent" type="checkbox" id="cat104" name="sCategory[]" value="104"  /> <label for="cat104"><strong>Coupé</strong></label>
+                                                                                            </li>
+                                                                                    <li class="parent">
+                                                <input class="parent" type="checkbox" id="cat106" name="sCategory[]" value="106"  /> <label for="cat106"><strong>4x4 - SUV</strong></label>
+                                                                                            </li>
+                                                                            </ul>
+                                </div>
+                            -->
+                        </fieldset>
+						<!-- MIS EN COMMENTAIRE CAR FAIT LE LIEN AVEC LES FILTRES -->
+                        <!--
+                        <button type="submit">Rechercher</button>
+                    </form>
+                    <script type="text/javascript">
+$(document).ready(function(){
+    $(".sub_button").click(function(){
+        $.post('http://www.noisacco.fr/index.php', {email:$("#alert_email").val(), userid:$("#alert_userId").val(), alert:$("#alert").val(), page:"ajax", action:"alerts"}, 
+            function(data){
+                if(data==1) { alert('Vous vous êtes inscrit avec succès à cette alerte'); }
+                else if(data==-1) { alert('Adresse e-mail incorrecte'); }
+                else { alert('Il y a un problème avec cette alerte');
+                };
+        });
+        return false;
+    });
+
+    var sQuery = 'Entrez votre e-mail' ;
+
+    if($('input[name=alert_email]').val() == sQuery) {
+        $('input[name=alert_email]').css('color', 'gray');
+    }
+    $('input[name=alert_email]').click(function(){
+        if($('input[name=alert_email]').val() == sQuery) {
+            $('input[name=alert_email]').val('');
+            $('input[name=alert_email]').css('color', '');
+        }
+    });
+    $('input[name=alert_email]').blur(function(){
+        if($('input[name=alert_email]').val() == '') {
+            $('input[name=alert_email]').val(sQuery);
+            $('input[name=alert_email]').css('color', 'gray');
+        }
+    });
+    $('input[name=alert_email]').keypress(function(){
+        $('input[name=alert_email]').css('background','');
+    })
+});
+</script>
+
+<div class="alert_form">
+    <h3>
+        <strong>Abonnez vous à cette recherche</strong>
+    </h3>
+    <form action="http://www.noisacco.fr/index.php" method="post" name="sub_alert" id="sub_alert">
+        <fieldset>
+            <input id="page" type="hidden" name="page" value="search" />            <input id="alert" type="hidden" name="alert" value="eyJwcmljZV9taW4iOjAsInByaWNlX21heCI6MCwiYUNhdGVnb3JpZXMiOltdLCJjaXR5X2FyZWFzIjpbXSwiY2l0aWVzIjpbXSwicmVnaW9ucyI6W10sImNvdW50cmllcyI6W10sIndpdGhQYXR0ZXJuIjpmYWxzZSwic1BhdHRlcm4iOm51bGwsInRhYmxlcyI6W10sInRhYmxlc19qb2luIjpbXSwibm9fY2F0Y2hlZF90YWJsZXMiOltdLCJub19jYXRjaGVkX2NvbmRpdGlvbnMiOltdLCJ1c2VyX2lkcyI6bnVsbCwib3JkZXJfY29sdW1uIjoiZHRfcHViX2RhdGUiLCJvcmRlcl9kaXJlY3Rpb24iOiJkZXNjIiwibGltaXRfaW5pdCI6MCwicmVzdWx0c19wZXJfcGFnZSI6IjEwIn0=" />
+                            <input id="alert_userId" type="hidden" name="alert_userId" value="0" />                <input id="alert_email" type="text" name="alert_email" value="Entrez votre e-mail" />
+                        <button type="submit" class="sub_button" >Abonnez-vous maintenant!</button>
+        </fieldset>
+    </form>
+</div>                </div>
+            </div>
+            <script type="text/javascript">
+                $(function() {
+                    function log( message ) {
+                        $( "<div/>" ).text( message ).prependTo( "#log" );
+                        $( "#log" ).attr( "scrollTop", 0 );
+                    }
+
+                    $( "#sCity" ).autocomplete({
+                        source: "http://www.noisacco.fr/index.php?page=ajax&action=location",
+                        minLength: 2,
+                        select: function( event, ui ) {
+                            log( ui.item ?
+                                "Sélectionnés: " + ui.item.value + " aka " + ui.item.id :
+                                "Rien n'a été sélectionné.  " + this.value );
+                        }
+                    });
+                });
+                
+                function checkEmptyCategories() {
+                    var n = $("input[id*=cat]:checked").length;
+                    if(n>0) {
+                        return true;
+                    } else {
+                        return false;
+                    }
+                }
+            </script>
+        </div>
+        <!-- footer -->
+<div id="footer">
+    <div class="inner">
+        <a href="../../../../www.noisacco.fr/contact">Page de contact</a>
+                            | <a href="../../../../www.noisacco.fr/conditions-generales-p23">Conditions générales</a>
+                    | <a href="../../../../www.noisacco.fr/informations-legales-p24">Informations légales</a>
+                    | <a href="../../../../www.noisacco.fr/comprendre-une-annonce-p25">Comprendre une annonce</a>
+                    </div>
+    <p> Noisacco.fr | Site spécialisé dans les petites annonces de voitures haut de gamme, sportive, exclusive.</p><br/>
+</div>
+<!-- /footer -->
+</div>
+<!-- /container -->
+<script type="text/javascript">
+    var sQuery = 'Minimum 4 caractères' ;
+    function doSearch() {
+        if($('input[name=sPattern]').val() == sQuery || ( $('input[name=sPattern]').val() != '' && $('input[name=sPattern]').val().length < 3 ) ) {
+            $('input[name=sPattern]').css('background', '#FFC6C6');
+            $('#search-example').text('Votre recherche doit contenir 3 caractères au minimum.')-->
+            return false;
+        }
+        return true;
+    }
+</script>
+    <!-- requrire location -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+	        if( $("form[name=item]").length > 0 ) {
+                $('input[id="region"]').addClass("{required: true, messages: { required: 'Précisez votre région'}}") ;
+                $('input[id="country"]').addClass("{required: true, messages: { required: 'Précisez votre pays'}}") ;
+	        }
+        }) ;
+    </script>
+    <!-- require location end -->
+	<!--ipt type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-41047682-1']);
+    _gaq.push(['_trackPageview']);
+    
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</scri--><script type="text/javascript">$(".flashmessage .ico-close").click(function(){$(this).parent().hide();});</script>    </body>
+</html>

@@ -845,7 +845,7 @@ form.bad-email .fa, form.bad-email .message {
 }
 
 .ui-widget-header {    
-	background-color: #35c4a1;
+	background-color: #9b59b6;
 	background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.25) 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 75%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0));
 	background-size: 40px 40px; 
 	color: #ffffff; 

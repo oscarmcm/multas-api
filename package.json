@@ -1,11 +1,26 @@
 {
   "name": "multas-api",
   "version": "1.0.0",
-  "main": "server/server.js",
+  "description": "This is an API that show a list of traffic fines",
+  "author": "Oscar Cortez",
   "scripts": {
     "pretest": "jshint .",
     "start": "node server/server.js"
   },
+  "main": "server/server.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oscarmcm/multas-api"
+  },
+  "bugs": {
+    "url": "https://github.com/oscarmcm/multas-api/issues"
+  },
+  "keywords": [
+    "loopback",
+    "api",
+    "nicaragua",
+    "multas"
+  ],
   "dependencies": {
     "compression": "^1.0.3",
     "errorhandler": "^1.1.1",
@@ -20,9 +35,13 @@
     "loopback-explorer": "^1.1.0"
   },
   "devDependencies": {
-    "jshint": "^2.5.6"
+    "jshint": "^2.5.6",
+    "mocha": "*",
+    "chai": "*",
+    "supertest": "*"
   },
   "engines": {
     "node": "0.10.34"
-  }
+  },
+  "license": "MIT"
 }

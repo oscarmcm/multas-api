@@ -10,6 +10,6 @@ deploy:
     secure: gDKWKgUbt2o1ojvym6b4KkShwAiTh5squhRnalckIs+c4IbnKlZt9frhJVkyj4/mzWGWU9EawPhp1yLKi6zyObxZJTALN8aVNMnDqWuug5i7D1ORDwhgVzredm+g4+ztwc2JtMIfG9q7rTbUAsUIewuxzwWc6unKyKVLump2Y7I=
   app: polar-hamlet-3568
   on:
-    repo: multas-api
+    repo: oscarmcm/multas-api
     all_branches: true
 

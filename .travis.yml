@@ -4,6 +4,9 @@ node_js:
 - '0.10'
 addons:
   postgresql: "9.3"
+os:
+  - linux
+  - osx
 deploy:
   provider: heroku
   api_key:
@@ -11,5 +14,5 @@ deploy:
   app: polar-hamlet-3568
   on:
     repo: oscarmcm/multas-api
-    all_branches: true
+    branch: master
 
